@@ -1,26 +1,57 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import './style.css';
+import { Route, Switch } from 'react-router-dom';
+import { withRouter } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
-function App() {
+import Header from './headers/Header';
+
+import AboutMeContainer from './components/AboutMeContainer';
+import Projects from './components/ProjectContainer';
+import Resume from './components/ResumeContainer';
+
+const App = () => {
+  // Initialize history
+  const history = useHistory();
+
+  // Render Projects Page
+  const renderProjects = () => {
+    return (
+      <Projects />
+    );
+  };
+
+  // Render Resume Page
+  const renderResume = () => {
+    return (
+      <Resume />
+    );
+  };
+
+  // Render AboutMe Page
+  const renderAboutMe = () => {
+    return (
+      <AboutMeContainer />
+    );
+  };
+
+  // RETURN
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="maincontainer">
+      <div className="title">
+        <Header 
+          history={history}
+        />
+      </div>
+      
+      <Switch>
+        <Route exact path="/" render={() => renderAboutMe() } />
+        <Route exact path="/projects" render={() => renderProjects() } />
+        <Route exact path="/resume" render={() => renderResume() } />
+      </Switch>
     </div>
   );
-}
+};
 
-export default App;
+let RouterComponent = withRouter(App);
+export default RouterComponent; 
