@@ -4,7 +4,6 @@
 .maincontainer {
     width: 100vw;
     height: 100%;
-    background-size: cover;
 }
 
 .main {
@@ -64,7 +63,6 @@
       padding-top: 20px;
       align-items: center;
       color: #0e1c36;
-      background-size: cover;
 }
 
 .aboutme h1 {
@@ -223,3 +221,159 @@
     margin-bottom: 50px;
 }
 
+/* MOBILE SETTINGS */
+@media only screen and (max-width: 800px) {
+    .maincontainer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .header {
+        height: 5%;
+    }
+    
+    .header h1 {
+        font-size: 3vh;
+    }
+    
+    .navbar {
+        height: 8%;
+    }
+    
+    .link {
+        font-size: 1.5vh;
+    }
+
+    /* ABOUT MECONTAINER CLASSNAMES */
+    .aboutmepage {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        left: 0;
+        width: 100%;
+    }
+    
+    .aboutme h1 {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        font-size: 3vw;
+        width: 100%;
+    }
+    
+    .aboutme h5 {
+        display: flex;
+        flex-direction: column;
+        left: 0;
+        font-size: 2vw;
+        width: 100%;
+    }
+    
+    .links {
+        display: flex;
+        flex-direction: row;
+    }
+    
+    .logoimage {
+        height: 30px;
+        margin: 20px;
+    }
+    
+    /* PROJECTCONTAINER CLASSNAMES */
+    
+    .project {
+        display: flex;
+        flex-direction: column;
+        height: 85.4vh;
+        width: 99vw;
+        align-items: center;
+        color: #0e1c36;
+        overflow-y: scroll;
+    }
+    
+    .askanswer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        width: 80%;
+        margin: 20px;
+    }
+    
+    .flatflix {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        width: 80%;
+        margin: 20px;
+    }
+    
+    .mygrub {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid;
+        width: 80%;
+        margin: 20px;
+    }
+    
+    .project h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5px;
+        margin-top: 5px;
+        padding-top: 20px;
+        font-size: 3vw;
+        font-family: 'Marcellus', serif;
+        color: #119DA4;
+        font-weight: bold;
+    }
+    
+    .project h3 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 2vw;
+        color: #191970;
+        font-family: 'Montserrat', sans-serif;
+    }
+    
+    .project p {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        padding-left: 50px;
+        padding-right: 50px;
+        font-size: 1.5vw;
+        font-family: 'Montserrat', sans-serif;
+        color: #191970;
+    }
+    
+    .video {
+        overflow:hidden;
+        padding-bottom:56.25%;
+        position:relative;
+        height:0;
+    }
+    
+    /* RESUME CONTAINER */
+    .button {
+        width: 200px;
+        height: 40px;
+        margin: 20px;
+        font-weight: bold;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.5vw;
+    }
+} 
