@@ -7,7 +7,7 @@ const ProjectContainer = (props) => {
         <div className="project">
             <div className="askanswer">
                 <h1>Ask:Answer</h1>
-                <p>A student/teacher communication platform which allows students to message teachers with questions and/or request office hours. The teacher can view messages, respond to messages, and schedule office hours. It is built with a React frontend and Rails backend.</p>
+                <p>A student/teacher communication platform which allows student users to message teachers with questions and/or request office hours. The teacher user can view messages, respond to messages, and schedule office hours. It is built with a React frontend and Rails backend.</p>
                 <ReactPlayer 
                 className="video"
                     url="https://www.youtube.com/watch?v=z6n__IfAikk"
