@@ -7,7 +7,7 @@ const ProjectContainer = (props) => {
         <div className="project">
             <div className="askanswer">
                 <h1>Ask:Answer</h1>
-                <p>A student/teacher communication platform which allows student users to message teachers with questions and/or request office hours. The teacher user can view messages, respond to messages, and schedule office hours. It is built with a React frontend and Rails backend.</p>
+                <p>A student/teacher communication platform which allows student users to message teachers with questions and/or request office hours. The teacher user can view messages, respond to messages, and schedule office hours. It is built with a React frontend and a Rails backend.</p>
                 <ReactPlayer 
                 className="video"
                     url="https://www.youtube.com/watch?v=z6n__IfAikk"
@@ -23,7 +23,7 @@ const ProjectContainer = (props) => {
             </div>
             <div className="flatflix">
                 <h1>Flatflix</h1>
-                <p>A netflix clone that allows a user to browse available movies separated by category and select individual movies to see information on a particular movie as well as watch the trailer. It is built with React frontend and Rails backend.</p>
+                <p>A netflix clone that allows a user to browse available movies separated by category and select individual movies to see information on a particular movie as well as watch the trailer. It is built with a React frontend and a Rails backend.</p>
                 <ReactPlayer 
                 className="video"
                     url="https://www.youtube.com/watch?v=mCmve4kKIGk"
