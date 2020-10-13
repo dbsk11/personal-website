@@ -39,7 +39,7 @@ const ProjectContainer = (props) => {
             </div>
             <div className="mygrub">
                 <h1>MyGrub</h1>
-                <p>A grubhub clone, built with vanilla Javascript and a Rails backend, which allows users to choose a restaurant, select items to order, and add items to their cart.</p>
+                <p>A grubhub clone, built using vanilla Javascript with a Ruby on Rails backend, which allows users to choose a restaurant, select items to order, and add items to their cart.</p>
                 <ReactPlayer 
                     className="video"
                     url="https://www.youtube.com/watch?v=7lnuysS5NDY"
